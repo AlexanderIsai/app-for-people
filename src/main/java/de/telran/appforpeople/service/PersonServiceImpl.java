@@ -41,8 +41,7 @@ public class PersonServiceImpl implements PersonService {
                 }
             }
         }
-        int temp = characterStack.size();
-        for (int i = 0; i < temp; i++) {
+        while (!characterStack.empty()){
             stringBuilder.append(characterStack.pop());
         }
         return stringBuilder.toString();
